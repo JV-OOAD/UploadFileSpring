@@ -66,7 +66,7 @@ public class FileUploadController {
     }
     @GetMapping("/search")
     public String listSearchFiles(@RequestParam("name") String name, Model model) throws IOException {
-    	model.addAttribute("links",searchService.doSearch(name) );
+    	model.addAttribute("filesdetail",searchService.doSearch(name) );
         return "uploadForm";
     }
 

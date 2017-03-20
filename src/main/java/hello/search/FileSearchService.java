@@ -15,7 +15,7 @@ public class FileSearchService implements SearchService {
 
 	}
 	@Override
-	public List<String> doSearch(String name) {
+	public List<FileDrive> doSearch(String name) {
 		// TODO Auto-generated method stub
 		DriveService driveService = new DriveService();
 		return driveService.doSearch(name);
